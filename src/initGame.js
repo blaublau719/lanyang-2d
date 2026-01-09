@@ -122,6 +122,7 @@ export default async function initGame() {
         k.text(generalData.header.subtitle, {
           font: "ibm-bold",
           size: 48,
+          width: 1400,
         }),
         k.color(k.Color.fromHex(PALETTE.color1)),
         k.anchor("center"),
