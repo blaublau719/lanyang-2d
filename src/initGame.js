@@ -61,6 +61,8 @@ export default async function initGame() {
   k.loadSprite("tailwind-logo", "./logos/tailwind-logo.png");
   k.loadSprite("python-logo", "./logos/python-logo.png");
   k.loadSprite("email-logo", "./logos/email-logo.png");
+  k.loadSprite("cat-logo", "./logos/cat-logo.png");
+  k.loadSprite("haw-logo", "./logos/haw-logo.png");
   k.loadSprite("sonic-js", "./projects/sonic-js.png");
   k.loadSprite("kirby-ts", "./projects/kirby-ts.png");
   k.loadSprite("platformer-js", "./projects/platformer-js.png");
