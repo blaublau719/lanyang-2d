@@ -125,7 +125,7 @@ export default async function initGame() {
         }),
         k.color(k.Color.fromHex(PALETTE.color1)),
         k.anchor("center"),
-        k.pos(800, 100),
+        k.pos(800, 150),
         k.opacity(0),
       ]);
 
