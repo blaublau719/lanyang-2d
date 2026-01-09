@@ -3,48 +3,48 @@
     "pos": { "x": 300, "y": 250 },
     "name": "GitHub",
     "description": "GitHub is where I host my projects.",
-    "link": "https://github.com/jslegenddev",
+    "link": "https://github.com/blaublau719",
     "logoData": { "name": "github-logo", "width": 228.6, "height": 179.5 }
   },
   {
     "pos": { "x": 500, "y": 250 },
-    "name": "YouTube",
-    "description": "I make JavaScript/TypeScript game dev courses there.",
-    "link": "https://youtube.com/@jslegenddev",
+    "name": "LinkedIn",
+    "description": "My LinkedIn profile.",
+    "link": "https://www.linkedin.com/in/lan-yang-977578249/",
     "logoData": {
-      "name": "youtube-logo",
+      "name": "linkedin-logo",
       "width": 160,
       "height": 110
     }
   },
   {
-    "pos": { "x": 700, "y": 250 },
-    "name": "X",
-    "description": "Here is my X/Twitter, I don't really use it much.",
-    "link": "https://x.com/jslegenddev",
+    "pos": { "x": 1100, "y": 250 },
+    "name": "Email",
+    "address": "lan980719@gmail.com",
     "logoData": {
-      "name": "x-logo",
+      "name": "email-logo",
+      "width": 128,
+      "height": 128
+    }
+  },
+  {
+    "pos": { "x": 700, "y": 250 },
+    "name": "My Cat - Mengmeng",
+    "description": "Isn't she the cutest?",
+    "link": "https://www.instagram.com/meng_savetheworld?igsh=cnY0dTlpaDZmYXlw&utm_source=qr",
+    "logoData": {
+      "name": "cat-logo",
       "width": 128,
       "height": 128
     }
   },
   {
     "pos": { "x": 900, "y": 250 },
-    "name": "Substack",
-    "description": "I make written JavaScript/TypeScript game dev tutorials there.",
-    "link": "https://jslegenddev.substack.com/",
+    "name": "My Plants",
+    "description": "I haven't count how many plants (mostly Haworthia) I have, but I'm sure it's more than 400, and I'm constantly producing new hybrides. Yes I'm a bit crazy for them, but life is just too short to feel crazy for something.",
+    "link": "https://www.instagram.com/hawiwi_lan?igsh=MXcwdm43Z3E2NmFlbQ%3D%3D&utm_source=qr",
     "logoData": {
-      "name": "substack-logo",
-      "width": 128,
-      "height": 128
-    }
-  },
-  {
-    "pos": { "x": 1100, "y": 250 },
-    "name": "Email",
-    "address": "jslegend@protonmail.com",
-    "logoData": {
-      "name": "email-logo",
+      "name": "haw-logo",
       "width": 128,
       "height": 128
     }
