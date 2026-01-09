@@ -121,12 +121,12 @@ export default async function initGame() {
       const subtitleText = container.add([
         k.text(generalData.header.subtitle, {
           font: "ibm-bold",
-          size: 48,
+          size: 36,
           width: 1400,
         }),
         k.color(k.Color.fromHex(PALETTE.color1)),
         k.anchor("center"),
-        k.pos(800, 150),
+        k.pos(800, 180),
         k.opacity(0),
       ]);
 
