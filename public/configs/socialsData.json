@@ -18,6 +18,16 @@
     }
   },
   {
+    "pos": { "x": 1100, "y": 250 },
+    "name": "Email",
+    "address": "lan980719@gmail.com",
+    "logoData": {
+      "name": "email-logo",
+      "width": 128,
+      "height": 128
+    }
+  },
+  {
     "pos": { "x": 700, "y": 250 },
     "name": "My Cat",
     "description": "Isn't she the cutest?",
@@ -35,16 +45,6 @@
     "link": "https://www.instagram.com/hawiwi_lan?igsh=MXcwdm43Z3E2NmFlbQ%3D%3D&utm_source=qr",
     "logoData": {
       "name": "haw-logo",
-      "width": 128,
-      "height": 128
-    }
-  },
-  {
-    "pos": { "x": 1100, "y": 250 },
-    "name": "Email",
-    "address": "lan980719@gmail.com",
-    "logoData": {
-      "name": "email-logo",
       "width": 128,
       "height": 128
     }
