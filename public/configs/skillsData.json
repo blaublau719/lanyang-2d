@@ -1,6 +1,6 @@
 [
   {
-    "pos": { "x": -300, "y": -300 },
+    "pos": { "x": -400, "y": -400 },
     "name": "Python",
     "logoData": {
       "name": "python-logo",
@@ -9,7 +9,7 @@
     }
   },
   {
-    "pos": { "x": -500, "y": -300 },
+    "pos": { "x": -200, "y": -400 },
     "name": "Java",
     "logoData": {
       "name": "java-logo",
@@ -18,7 +18,7 @@
     }
   },
   {
-    "pos": { "x": -100, "y": -300 },
+    "pos": { "x": 0, "y": -400 },
     "name": "C",
     "logoData": {
       "name": "c-logo",
@@ -27,7 +27,7 @@
     }
   },
   {
-    "pos": { "x": 100, "y": -300 },
+    "pos": { "x": 200, "y": -400 },
     "name": "C#",
     "logoData": {
       "name": "csharp-logo",
@@ -36,88 +36,7 @@
     }
   },
   {
-    "pos": { "x": -500, "y": -100 },
-    "name": "LangGraph",
-    "logoData": {
-      "name": "langgraph-logo",
-      "width": 128,
-      "height": 128
-    }
-  },
-  {
-    "pos": { "x": -700, "y": -300 },
-    "name": "LangChain",
-    "logoData": {
-      "name": "langchain-logo",
-      "width": 128,
-      "height": 128
-    }
-  },
-  {
-    "pos": { "x": -700, "y": -100 },
-    "name": "OpenAI",
-    "logoData": {
-      "name": "openai-logo",
-      "width": 128,
-      "height": 128
-    }
-  },
-  {
-    "pos": { "x": -700, "y": 100 },
-    "name": "CrewAI",
-    "logoData": {
-      "name": "crewai-logo",
-      "width": 128,
-      "height": 128
-    }
-  },
-  {
-    "pos": { "x": -500, "y": 100 },
-    "name": "Tavily",
-    "logoData": {
-      "name": "tavily-logo",
-      "width": 128,
-      "height": 128
-    }
-  },
-  {
-    "pos": { "x": 500, "y": -100 },
-    "name": "Azure AI Foundry",
-    "logoData": {
-      "name": "azureaifoundry-logo",
-      "width": 128,
-      "height": 128
-    }
-  },
-  {
-    "pos": { "x": 300, "y": -300 },
-    "name": "Pydantic AI",
-    "logoData": {
-      "name": "pydanticai-logo",
-      "width": 128,
-      "height": 128
-    }
-  },
-  {
-    "pos": { "x": 500, "y": 100 },
-    "name": "Hugging Face",
-    "logoData": {
-      "name": "huggingface-logo",
-      "width": 128,
-      "height": 128
-    }
-  },
-  {
-    "pos": { "x": 700, "y": -100 },
-    "name": "LM Studio",
-    "logoData": {
-      "name": "lmstudio-logo",
-      "width": 128,
-      "height": 128
-    }
-  },
-  {
-    "pos": { "x": 700, "y": -300 },
+    "pos": { "x": 400, "y": -400 },
     "name": "Git",
     "logoData": {
       "name": "git-logo",
@@ -126,7 +45,7 @@
     }
   },
   {
-    "pos": { "x": 700, "y": 100 },
+    "pos": { "x": -400, "y": -200 },
     "name": "Docker",
     "logoData": {
       "name": "docker-logo",
@@ -135,7 +54,7 @@
     }
   },
   {
-    "pos": { "x": -700, "y": 300 },
+    "pos": { "x": -200, "y": -200 },
     "name": "Neo4j",
     "logoData": {
       "name": "neo4j-logo",
@@ -144,7 +63,7 @@
     }
   },
   {
-    "pos": { "x": -500, "y": 300 },
+    "pos": { "x": 200, "y": -200 },
     "name": "Unity",
     "logoData": {
       "name": "unity-logo",
@@ -153,7 +72,7 @@
     }
   },
   {
-    "pos": { "x": -300, "y": 300 },
+    "pos": { "x": 400, "y": -200 },
     "name": "FastAPI",
     "logoData": {
       "name": "fastapi-logo",
@@ -162,10 +81,91 @@
     }
   },
   {
-    "pos": { "x": 500, "y": -300 },
+    "pos": { "x": -400, "y": 200 },
     "name": "Streamlit",
     "logoData": {
       "name": "streamlit-logo",
+      "width": 128,
+      "height": 128
+    }
+  },
+  {
+    "pos": { "x": -200, "y": 200 },
+    "name": "LangChain",
+    "logoData": {
+      "name": "langchain-logo",
+      "width": 128,
+      "height": 128
+    }
+  },
+  {
+    "pos": { "x": 200, "y": 200 },
+    "name": "LangGraph",
+    "logoData": {
+      "name": "langgraph-logo",
+      "width": 128,
+      "height": 128
+    }
+  },
+  {
+    "pos": { "x": 400, "y": 200 },
+    "name": "OpenAI",
+    "logoData": {
+      "name": "openai-logo",
+      "width": 128,
+      "height": 128
+    }
+  },
+  {
+    "pos": { "x": -400, "y": 400 },
+    "name": "CrewAI",
+    "logoData": {
+      "name": "crewai-logo",
+      "width": 128,
+      "height": 128
+    }
+  },
+  {
+    "pos": { "x": -200, "y": 400 },
+    "name": "Tavily",
+    "logoData": {
+      "name": "tavily-logo",
+      "width": 128,
+      "height": 128
+    }
+  },
+  {
+    "pos": { "x": 0, "y": 400 },
+    "name": "Azure AI Foundry",
+    "logoData": {
+      "name": "azureaifoundry-logo",
+      "width": 128,
+      "height": 128
+    }
+  },
+  {
+    "pos": { "x": 200, "y": 400 },
+    "name": "Pydantic AI",
+    "logoData": {
+      "name": "pydanticai-logo",
+      "width": 128,
+      "height": 128
+    }
+  },
+  {
+    "pos": { "x": 400, "y": 400 },
+    "name": "Hugging Face",
+    "logoData": {
+      "name": "huggingface-logo",
+      "width": 128,
+      "height": 128
+    }
+  },
+  {
+    "pos": { "x": 600, "y": 400 },
+    "name": "LM Studio",
+    "logoData": {
+      "name": "lmstudio-logo",
       "width": 128,
       "height": 128
     }
