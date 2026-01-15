@@ -1,6 +1,6 @@
 [
   {
-    "pos": { "x": -600, "y": -300 },
+    "pos": { "x": -300, "y": -400 },
     "name": "Python",
     "logoData": {
       "name": "python-logo",
@@ -9,7 +9,7 @@
     }
   },
   {
-    "pos": { "x": -400, "y": -300 },
+    "pos": { "x": -100, "y": -400 },
     "name": "Java",
     "logoData": {
       "name": "java-logo",
@@ -18,7 +18,7 @@
     }
   },
   {
-    "pos": { "x": -200, "y": -300 },
+    "pos": { "x": 100, "y": -400 },
     "name": "C",
     "logoData": {
       "name": "c-logo",
@@ -27,7 +27,7 @@
     }
   },
   {
-    "pos": { "x": 0, "y": -300 },
+    "pos": { "x": 300, "y": -400 },
     "name": "C#",
     "logoData": {
       "name": "csharp-logo",
@@ -36,7 +36,7 @@
     }
   },
   {
-    "pos": { "x": 200, "y": -300 },
+    "pos": { "x": -400, "y": -200 },
     "name": "Git",
     "logoData": {
       "name": "git-logo",
@@ -45,7 +45,7 @@
     }
   },
   {
-    "pos": { "x": 400, "y": -300 },
+    "pos": { "x": -200, "y": -200 },
     "name": "Docker",
     "logoData": {
       "name": "docker-logo",
@@ -54,7 +54,7 @@
     }
   },
   {
-    "pos": { "x": 600, "y": -300 },
+    "pos": { "x": 0, "y": -200 },
     "name": "Neo4j",
     "logoData": {
       "name": "neo4j-logo",
@@ -63,7 +63,7 @@
     }
   },
   {
-    "pos": { "x": -600, "y": -100 },
+    "pos": { "x": 200, "y": -200 },
     "name": "Unity",
     "logoData": {
       "name": "unity-logo",
@@ -72,7 +72,7 @@
     }
   },
   {
-    "pos": { "x": -400, "y": -100 },
+    "pos": { "x": 400, "y": -200 },
     "name": "FastAPI",
     "logoData": {
       "name": "fastapi-logo",
@@ -81,7 +81,7 @@
     }
   },
   {
-    "pos": { "x": -200, "y": -100 },
+    "pos": { "x": -400, "y": 200 },
     "name": "Streamlit",
     "logoData": {
       "name": "streamlit-logo",
@@ -90,7 +90,7 @@
     }
   },
   {
-    "pos": { "x": 0, "y": -100 },
+    "pos": { "x": -200, "y": 200 },
     "name": "LangGraph",
     "logoData": {
       "name": "langgraph-logo",
@@ -99,7 +99,7 @@
     }
   },
   {
-    "pos": { "x": 200, "y": -100 },
+    "pos": { "x": 0, "y": 200 },
     "name": "OpenAI",
     "logoData": {
       "name": "openai-logo",
@@ -108,7 +108,7 @@
     }
   },
   {
-    "pos": { "x": 400, "y": -100 },
+    "pos": { "x": 200, "y": 200 },
     "name": "CrewAI",
     "logoData": {
       "name": "crewai-logo",
@@ -117,7 +117,7 @@
     }
   },
   {
-    "pos": { "x": 600, "y": -100 },
+    "pos": { "x": 400, "y": 200 },
     "name": "Tavily",
     "logoData": {
       "name": "tavily-logo",
@@ -126,7 +126,7 @@
     }
   },
   {
-    "pos": { "x": -600, "y": 100 },
+    "pos": { "x": -300, "y": 400 },
     "name": "Azure AI Foundry",
     "logoData": {
       "name": "azureaifoundry-logo",
@@ -135,7 +135,7 @@
     }
   },
   {
-    "pos": { "x": -400, "y": 100 },
+    "pos": { "x": -100, "y": 400 },
     "name": "Pydantic AI",
     "logoData": {
       "name": "pydanticai-logo",
@@ -144,7 +144,7 @@
     }
   },
   {
-    "pos": { "x": -200, "y": 100 },
+    "pos": { "x": 100, "y": 400 },
     "name": "Hugging Face",
     "logoData": {
       "name": "huggingface-logo",
@@ -153,7 +153,7 @@
     }
   },
   {
-    "pos": { "x": 0, "y": 100 },
+    "pos": { "x": 300, "y": 400 },
     "name": "LM Studio",
     "logoData": {
       "name": "lmstudio-logo",
