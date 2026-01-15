@@ -114,7 +114,7 @@ export default async function initGame() {
       container.add([
         k.text(generalData.header.title, { font: "ibm-bold", size: 88 }),
         k.color(k.Color.fromHex(PALETTE.color1)),
-        k.pos(395, 0),
+        k.pos(395, -120),
         k.opacity(0),
       ]);
 
@@ -126,7 +126,7 @@ export default async function initGame() {
         }),
         k.color(k.Color.fromHex(PALETTE.color1)),
         k.anchor("center"),
-        k.pos(800, 180),
+        k.pos(800, 50),
         k.opacity(0),
       ]);
 
