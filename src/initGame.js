@@ -56,7 +56,6 @@ export default async function initGame() {
   k.loadSprite("c-logo", "./logos/c-logo.png");
   k.loadSprite("csharp-logo", "./logos/csharp-logo.png");
   k.loadSprite("langgraph-logo", "./logos/langgraph-logo.png");
-  k.loadSprite("langchain-logo", "./logos/langchain-logo.png");
   k.loadSprite("openai-logo", "./logos/openai-logo.png");
   k.loadSprite("crewai-logo", "./logos/crewai-logo.png");
   k.loadSprite("tavily-logo", "./logos/tavily-logo.png");
