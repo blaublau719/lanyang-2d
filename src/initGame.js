@@ -221,18 +221,8 @@ export default async function initGame() {
     k.vec2(centerX + radius * Math.cos(startAngle + 2 * angleStep), centerY + radius * Math.sin(startAngle + 2 * angleStep)),
     generalData.section3Name,
     (parent) => {
+      // Projects section - empty for now
       const container = parent.add([k.opacity(0), k.pos(400, -300)]);
-
-      for (const project of projectsData) {
-        makeProjectCard(
-          k,
-          container,
-          k.vec2(project.pos.x, project.pos.y),
-          project.data,
-          project.thumbnail
-        );
-      }
-
       makeAppear(k, container);
     }
   );
@@ -243,7 +233,7 @@ export default async function initGame() {
     k.vec2(centerX + radius * Math.cos(startAngle + 3 * angleStep), centerY + radius * Math.sin(startAngle + 3 * angleStep)),
     generalData.section4Name,
     (parent) => {
-      const container = parent.add([k.opacity(0), k.pos(-400, 250)]);
+      const container = parent.add([k.opacity(0), k.pos(200, 350)]);
 
       for (const education of educationData) {
         makeEducationCard(
