@@ -19,37 +19,37 @@ export default function makeResearchCard(
   ]);
 
   const title = card.add([
-    k.text(researchData.title, { font: "ibm-bold", size: 34 }),
+    k.text(researchData.title, { font: "ibm-bold", size: 38 }),
     k.color(k.Color.fromHex(PALETTE.color1)),
     k.pos(20, 20),
     k.opacity(0),
   ]);
 
   const projectName = card.add([
-    k.text(researchData.projectName, { font: "ibm-bold", size: 26 }),
+    k.text(researchData.projectName, { font: "ibm-bold", size: 30 }),
     k.color(k.Color.fromHex(PALETTE.color1)),
-    k.pos(20, 60),
+    k.pos(20, 65),
     k.opacity(0),
   ]);
 
   const period = card.add([
     k.text(researchData.period, {
       font: "ibm-regular",
-      size: 24,
+      size: 28,
     }),
     k.color(k.Color.fromHex(PALETTE.color1)),
-    k.pos(20, 95),
+    k.pos(20, 105),
     k.opacity(0),
   ]);
 
   const description = card.add([
     k.text(researchData.description, {
       font: "ibm-regular",
-      size: 23,
+      size: 27,
       width: 750,
     }),
     k.color(k.Color.fromHex(PALETTE.color1)),
-    k.pos(20, 130),
+    k.pos(20, 145),
     k.opacity(0),
   ]);
 

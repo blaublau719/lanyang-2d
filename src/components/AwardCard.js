@@ -19,7 +19,7 @@ export default function makeAwardCard(
   ]);
 
   const title = card.add([
-    k.text(awardData.title, { font: "ibm-bold", size: 28, width: 750 }),
+    k.text(awardData.title, { font: "ibm-bold", size: 32, width: 750 }),
     k.color(k.Color.fromHex(PALETTE.color1)),
     k.pos(20, 20),
     k.opacity(0),
@@ -28,20 +28,20 @@ export default function makeAwardCard(
   const institution = card.add([
     k.text(awardData.institution, {
       font: "ibm-regular",
-      size: 24,
+      size: 28,
     }),
     k.color(k.Color.fromHex(PALETTE.color1)),
-    k.pos(20, 75),
+    k.pos(20, 80),
     k.opacity(0),
   ]);
 
   const year = card.add([
     k.text(awardData.year, {
       font: "ibm-regular",
-      size: 24,
+      size: 28,
     }),
     k.color(k.Color.fromHex(PALETTE.color1)),
-    k.pos(20, 110),
+    k.pos(20, 120),
     k.opacity(0),
   ]);
 
