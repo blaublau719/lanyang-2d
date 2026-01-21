@@ -138,7 +138,7 @@ export default async function initGame() {
     k.vec2(centerX + radius * Math.cos(startAngle), centerY + radius * Math.sin(startAngle)),
     generalData.section1Name,
     (parent) => {
-      const container = parent.add([k.pos(-805, -300), k.opacity(0)]);
+      const container = parent.add([k.pos(-805, -650), k.opacity(0)]);
 
       container.add([
         k.text(generalData.header.title, { font: "ibm-bold", size: 88 }),
@@ -198,7 +198,7 @@ export default async function initGame() {
     (parent) => {
       const container = k.add([
         k.opacity(0),
-        k.pos(parent.pos.x + 100, parent.pos.y - 200),
+        k.pos(parent.pos.x + 300, parent.pos.y - 400),
       ]);
 
       for (const skillData of skillsData) {
@@ -221,7 +221,7 @@ export default async function initGame() {
     k.vec2(centerX + radius * Math.cos(startAngle + 2 * angleStep), centerY + radius * Math.sin(startAngle + 2 * angleStep)),
     generalData.section3Name,
     (parent) => {
-      const container = parent.add([k.opacity(0), k.pos(200, -200)]);
+      const container = parent.add([k.opacity(0), k.pos(400, -300)]);
 
       for (const project of projectsData) {
         makeProjectCard(
@@ -243,7 +243,7 @@ export default async function initGame() {
     k.vec2(centerX + radius * Math.cos(startAngle + 3 * angleStep), centerY + radius * Math.sin(startAngle + 3 * angleStep)),
     generalData.section4Name,
     (parent) => {
-      const container = parent.add([k.opacity(0), k.pos(200, 100)]);
+      const container = parent.add([k.opacity(0), k.pos(400, 300)]);
 
       for (const education of educationData) {
         makeEducationCard(
@@ -265,7 +265,7 @@ export default async function initGame() {
     k.vec2(centerX + radius * Math.cos(startAngle + 4 * angleStep), centerY + radius * Math.sin(startAngle + 4 * angleStep)),
     generalData.section5Name,
     (parent) => {
-      const container = parent.add([k.opacity(0), k.pos(-400, 200)]);
+      const container = parent.add([k.opacity(0), k.pos(-400, 400)]);
 
       for (const experienceData of experiencesData) {
         makeWorkExperienceCard(
@@ -287,7 +287,7 @@ export default async function initGame() {
     k.vec2(centerX + radius * Math.cos(startAngle + 5 * angleStep), centerY + radius * Math.sin(startAngle + 5 * angleStep)),
     generalData.section6Name,
     (parent) => {
-      const container = parent.add([k.opacity(0), k.pos(-1000, 100)]);
+      const container = parent.add([k.opacity(0), k.pos(-1200, 300)]);
 
       for (const research of researchData) {
         makeResearchCard(
@@ -309,7 +309,7 @@ export default async function initGame() {
     k.vec2(centerX + radius * Math.cos(startAngle + 6 * angleStep), centerY + radius * Math.sin(startAngle + 6 * angleStep)),
     generalData.section7Name,
     (parent) => {
-      const container = parent.add([k.opacity(0), k.pos(-1000, -200)]);
+      const container = parent.add([k.opacity(0), k.pos(-1200, -400)]);
 
       for (const award of awardsData) {
         makeAwardCard(

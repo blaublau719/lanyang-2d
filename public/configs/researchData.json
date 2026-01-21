@@ -1,6 +1,6 @@
 [
   {
-    "pos": { "x": 150, "y": -300 },
+    "pos": { "x": 150, "y": -350 },
     "cardHeight": 280,
     "researchData": {
       "title": "Master Thesis",
@@ -10,7 +10,7 @@
     }
   },
   {
-    "pos": { "x": 150, "y": 10 },
+    "pos": { "x": 150, "y": -40 },
     "cardHeight": 250,
     "researchData": {
       "title": "Research Assistant",
@@ -20,13 +20,33 @@
     }
   },
   {
-    "pos": { "x": 150, "y": 290 },
+    "pos": { "x": 150, "y": 240 },
     "cardHeight": 250,
     "researchData": {
       "title": "Research Assistant",
       "projectName": "Mobility-as-a-Service for Saarland",
       "period": "May 2022 - Feb 2023",
       "description": "Analyzed traffic data and developed MaaS app prototype. Advisor: Prof. Wolfgang Maass"
+    }
+  },
+  {
+    "pos": { "x": 150, "y": 520 },
+    "cardHeight": 230,
+    "researchData": {
+      "title": "Teaching Assistant",
+      "projectName": "Privacy-Enhancing Technologies",
+      "period": "May 2023 - Apr 2024",
+      "description": "Prepared lecture handouts and exercise sheets. Corrected course projects. Instructor: Dr. Wouter Lueks"
+    }
+  },
+  {
+    "pos": { "x": 150, "y": 780 },
+    "cardHeight": 230,
+    "researchData": {
+      "title": "Teaching Assistant",
+      "projectName": "Algorithms and Data Structures",
+      "period": "Nov 2021 - Apr 2022",
+      "description": "Developed teaching materials and corrected weekly exercise sheets. Instructor: Prof. Raimund Seidel"
     }
   }
 ]
