@@ -1,7 +1,7 @@
 [
   {
-    "pos": { "x": 150, "y": -180 },
-    "cardHeight": 140,
+    "pos": { "x": 150, "y": -200 },
+    "cardHeight": 180,
     "awardData": {
       "title": "Germany Scholarship for high-achieving students",
       "institution": "Saarland University",
@@ -9,8 +9,8 @@
     }
   },
   {
-    "pos": { "x": 150, "y": -10 },
-    "cardHeight": 140,
+    "pos": { "x": 150, "y": 10 },
+    "cardHeight": 180,
     "awardData": {
       "title": "Saarland Scholarship for International Students",
       "institution": "Saarland University",
@@ -18,8 +18,8 @@
     }
   },
   {
-    "pos": { "x": 150, "y": 160 },
-    "cardHeight": 140,
+    "pos": { "x": 150, "y": 220 },
+    "cardHeight": 180,
     "awardData": {
       "title": "Funded CASA Summer School on Software Security",
       "institution": "Bochum",
@@ -27,8 +27,8 @@
     }
   },
   {
-    "pos": { "x": 150, "y": 330 },
-    "cardHeight": 140,
+    "pos": { "x": 150, "y": 430 },
+    "cardHeight": 180,
     "awardData": {
       "title": "Funded Informatica Feminale Summer School",
       "institution": "Bremen",

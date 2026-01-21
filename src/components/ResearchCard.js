@@ -19,7 +19,7 @@ export default function makeResearchCard(
   ]);
 
   const title = card.add([
-    k.text(researchData.title, { font: "ibm-bold", size: 38 }),
+    k.text(researchData.title, { font: "ibm-bold", size: 40 }),
     k.color(k.Color.fromHex(PALETTE.color1)),
     k.pos(20, 20),
     k.opacity(0),
@@ -28,7 +28,7 @@ export default function makeResearchCard(
   const projectName = card.add([
     k.text(researchData.projectName, { font: "ibm-bold", size: 30 }),
     k.color(k.Color.fromHex(PALETTE.color1)),
-    k.pos(20, 65),
+    k.pos(20, 70),
     k.opacity(0),
   ]);
 
@@ -38,18 +38,18 @@ export default function makeResearchCard(
       size: 28,
     }),
     k.color(k.Color.fromHex(PALETTE.color1)),
-    k.pos(20, 105),
+    k.pos(20, 110),
     k.opacity(0),
   ]);
 
   const description = card.add([
     k.text(researchData.description, {
       font: "ibm-regular",
-      size: 27,
+      size: 28,
       width: 750,
     }),
     k.color(k.Color.fromHex(PALETTE.color1)),
-    k.pos(20, 145),
+    k.pos(20, 150),
     k.opacity(0),
   ]);
 

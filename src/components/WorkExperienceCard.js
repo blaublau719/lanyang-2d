@@ -31,7 +31,7 @@ export default function makeWorkExperienceCard(
       `${roleData.company.name} -- ${roleData.company.startDate}-${roleData.company.endDate}`,
       {
         font: "ibm-regular",
-        size: 28,
+        size: 30,
       }
     ),
     k.color(k.Color.fromHex(PALETTE.color1)),
@@ -40,9 +40,9 @@ export default function makeWorkExperienceCard(
   ]);
 
   const description = card.add([
-    k.text(roleData.description, { font: "ibm-regular", size: 32, width: 750 }),
+    k.text(roleData.description, { font: "ibm-regular", size: 28, width: 750 }),
     k.color(k.Color.fromHex(PALETTE.color1)),
-    k.pos(20, 130),
+    k.pos(20, 120),
     k.opacity(0),
   ]);
 
