@@ -49,21 +49,21 @@ export default function makeEducationCard(
   let yOffset = 240;
   const additionalElements = [];
 
-  if (educationData.grade) {
-    const grade = card.add([
-      k.text(educationData.grade, {
-        font: "ibm-regular",
-        size: 28,
-        width: 750,
-      }),
-      k.color(k.Color.fromHex(PALETTE.color1)),
-      k.pos(20, yOffset),
-      k.opacity(0),
-    ]);
-    additionalElements.push(grade);
-  }
 
-  opacityTrickleDown(parent, [degree, institution, period, ...additionalElements]);
+  const grade = card.add([
+    k.text(educationData.grade, {
+      font: "ibm-regular",
+      size: 28,
+      width: 750,
+    }),
+    k.color(k.Color.fromHex(PALETTE.color1)),
+    k.pos(20, yOffset),
+    k.opacity(0),
+  ]);
+  additionalElements.push(grade);
+
+
+  opacityTrickleDown(parent, [degree, institution, period, grade, ...additionalElements]);
 
   return card;
 }
