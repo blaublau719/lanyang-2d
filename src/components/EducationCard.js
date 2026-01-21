@@ -19,7 +19,7 @@ export default function makeEducationCard(
   ]);
 
   const degree = card.add([
-    k.text(educationData.degree, { font: "ibm-bold", size: 40 }),
+    k.text(educationData.degree, { font: "ibm-bold", size: 40, width: 750 }),
     k.color(k.Color.fromHex(PALETTE.color1)),
     k.pos(20, 20),
     k.opacity(0),
@@ -29,6 +29,7 @@ export default function makeEducationCard(
     k.text(`${educationData.institution} | ${educationData.location}`, {
       font: "ibm-regular",
       size: 30,
+      width: 750,
     }),
     k.color(k.Color.fromHex(PALETTE.color1)),
     k.pos(20, 70),
