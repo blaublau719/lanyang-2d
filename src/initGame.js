@@ -196,9 +196,10 @@ export default async function initGame() {
     k.vec2(centerX + radius * Math.cos(startAngle + angleStep), centerY + radius * Math.sin(startAngle + angleStep)),
     generalData.section2Name,
     (parent) => {
-      const container = k.add([
+      // Position skills icons in upper right inside the black box
+      const container = parent.add([
         k.opacity(0),
-        k.pos(parent.pos.x + 250, parent.pos.y + 200),
+        k.pos(-400, -300),
       ]);
 
       for (const skillData of skillsData) {
