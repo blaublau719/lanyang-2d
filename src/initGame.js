@@ -233,7 +233,7 @@ export default async function initGame() {
     k.vec2(centerX + radius * Math.cos(startAngle + 3 * angleStep), centerY + radius * Math.sin(startAngle + 3 * angleStep)),
     generalData.section4Name,
     (parent) => {
-      const container = parent.add([k.opacity(0), k.pos(200, 350)]);
+      const container = parent.add([k.opacity(0), k.pos(-400, 350)]);
 
       for (const education of educationData) {
         makeEducationCard(
