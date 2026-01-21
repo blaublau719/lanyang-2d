@@ -1,7 +1,7 @@
 [
   {
     "pos": { "x": 150, "y": -280 },
-    "cardHeight": 280,
+    "cardHeight": 300,
     "educationData": {
       "degree": "MSc in Business Informatics",
       "institution": "Saarland University (UdS)",
@@ -11,8 +11,8 @@
     }
   },
   {
-    "pos": { "x": 150, "y": 30 },
-    "cardHeight": 250,
+    "pos": { "x": 150, "y": 50 },
+    "cardHeight": 260,
     "educationData": {
       "degree": "BSc in Economics and Business Administration",
       "institution": "Eberhard Karls University Tübingen",
@@ -22,8 +22,8 @@
     }
   },
   {
-    "pos": { "x": 150, "y": 310 },
-    "cardHeight": 200,
+    "pos": { "x": 150, "y": 340 },
+    "cardHeight": 260,
     "educationData": {
       "degree": "Economical Preparatory Course",
       "institution": "Goethe University Frankfurt am Main",

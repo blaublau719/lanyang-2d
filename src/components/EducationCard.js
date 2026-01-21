@@ -32,7 +32,7 @@ export default function makeEducationCard(
       width: 750,
     }),
     k.color(k.Color.fromHex(PALETTE.color1)),
-    k.pos(20, 70),
+    k.pos(20, 120),
     k.opacity(0),
   ]);
 
@@ -42,11 +42,11 @@ export default function makeEducationCard(
       size: 28,
     }),
     k.color(k.Color.fromHex(PALETTE.color1)),
-    k.pos(20, 115),
+    k.pos(20, 200),
     k.opacity(0),
   ]);
 
-  let yOffset = 155;
+  let yOffset = 240;
   const additionalElements = [];
 
   if (educationData.grade) {
