@@ -19,7 +19,7 @@ export default function makeWorkExperienceCard(
   ]);
 
   const title = card.add([
-    k.text(roleData.title, { font: "ibm-bold", size: 32 }),
+    k.text(roleData.title, { font: "ibm-bold", size: 36 }),
     k.color(k.Color.fromHex(PALETTE.color1)),
     k.pos(20, 20),
     k.opacity(0),
@@ -31,18 +31,18 @@ export default function makeWorkExperienceCard(
       `${roleData.company.name} -- ${roleData.company.startDate}-${roleData.company.endDate}`,
       {
         font: "ibm-regular",
-        size: 20,
+        size: 24,
       }
     ),
     k.color(k.Color.fromHex(PALETTE.color1)),
-    k.pos(20, 60),
+    k.pos(20, 65),
     k.opacity(0),
   ]);
 
   const description = card.add([
-    k.text(roleData.description, { font: "ibm-regular", size: 25, width: 750 }),
+    k.text(roleData.description, { font: "ibm-regular", size: 28, width: 750 }),
     k.color(k.Color.fromHex(PALETTE.color1)),
-    k.pos(20, 110),
+    k.pos(20, 120),
     k.opacity(0),
   ]);
 
