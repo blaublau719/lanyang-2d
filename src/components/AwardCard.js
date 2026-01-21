@@ -31,7 +31,7 @@ export default function makeAwardCard(
       size: 30,
     }),
     k.color(k.Color.fromHex(PALETTE.color1)),
-    k.pos(20, 85),
+    k.pos(20, 100),
     k.opacity(0),
   ]);
 
@@ -41,7 +41,7 @@ export default function makeAwardCard(
       size: 28,
     }),
     k.color(k.Color.fromHex(PALETTE.color1)),
-    k.pos(20, 125),
+    k.pos(20, 145),
     k.opacity(0),
   ]);
 
