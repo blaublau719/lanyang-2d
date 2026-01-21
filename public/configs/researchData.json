@@ -1,0 +1,32 @@
+[
+  {
+    "pos": { "x": 150, "y": -300 },
+    "cardHeight": 280,
+    "researchData": {
+      "title": "Master Thesis",
+      "projectName": "ARPO: AR Application in Powerlifting",
+      "period": "May 2023 - Dec 2023",
+      "description": "Developed AR training system using Unity 3D and Azure Kinect for real-time motion feedback."
+    }
+  },
+  {
+    "pos": { "x": 150, "y": 10 },
+    "cardHeight": 250,
+    "researchData": {
+      "title": "Research Assistant",
+      "projectName": "Privacy-Friendly Communication System",
+      "period": "May 2023 - Apr 2024",
+      "description": "Investigated privacy threat modeling frameworks at CISPA. Advisor: Dr. Wouter Lueks"
+    }
+  },
+  {
+    "pos": { "x": 150, "y": 290 },
+    "cardHeight": 250,
+    "researchData": {
+      "title": "Research Assistant",
+      "projectName": "Mobility-as-a-Service for Saarland",
+      "period": "May 2022 - Feb 2023",
+      "description": "Analyzed traffic data and developed MaaS app prototype. Advisor: Prof. Wolfgang Maass"
+    }
+  }
+]

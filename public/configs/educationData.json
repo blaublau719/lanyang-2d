@@ -1,0 +1,35 @@
+[
+  {
+    "pos": { "x": 150, "y": -280 },
+    "cardHeight": 280,
+    "educationData": {
+      "degree": "MSc in Business Informatics",
+      "institution": "Saarland University (UdS)",
+      "location": "Saarbrücken, Germany",
+      "period": "Oct 2020 - Dec 2023",
+      "grade": "Grade: 1.1 (in Computer Science)"
+    }
+  },
+  {
+    "pos": { "x": 150, "y": 30 },
+    "cardHeight": 250,
+    "educationData": {
+      "degree": "BSc in Economics and Business Administration",
+      "institution": "Eberhard Karls University Tübingen",
+      "location": "Tübingen, Germany",
+      "period": "Oct 2016 - Jul 2020",
+      "grade": ""
+    }
+  },
+  {
+    "pos": { "x": 150, "y": 310 },
+    "cardHeight": 200,
+    "educationData": {
+      "degree": "Economical Preparatory Course",
+      "institution": "Goethe University Frankfurt am Main",
+      "location": "Frankfurt am Main, Germany",
+      "period": "Sep 2015 - Jun 2016",
+      "grade": ""
+    }
+  }
+]

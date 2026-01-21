@@ -8,6 +8,9 @@ import { makeAppear } from "./utils";
 import makeWorkExperienceCard from "./components/WorkExperienceCard";
 import makeEmailIcon from "./components/EmailIcon";
 import makeProjectCard from "./components/ProjectCard";
+import makeEducationCard from "./components/EducationCard";
+import makeResearchCard from "./components/ResearchCard";
+import makeAwardCard from "./components/AwardCard";
 import { cameraZoomValueAtom, store } from "./store";
 
 export default async function initGame() {
@@ -19,6 +22,15 @@ export default async function initGame() {
   ).json();
   const projectsData = await (
     await fetch("./configs/projectsData.json")
+  ).json();
+  const educationData = await (
+    await fetch("./configs/educationData.json")
+  ).json();
+  const researchData = await (
+    await fetch("./configs/researchData.json")
+  ).json();
+  const awardsData = await (
+    await fetch("./configs/awardsData.json")
   ).json();
 
   const k = makeKaplayCtx();
@@ -113,9 +125,17 @@ export default async function initGame() {
     tiledBackground.uniform.u_aspect = k.width() / k.height();
   });
 
+  // Calculate 7 section positions in a circle with proper spacing to avoid overlap
+  const centerX = k.center().x;
+  const centerY = k.center().y;
+  const radius = 900; // Larger radius to prevent content overlap
+  const angleStep = (2 * Math.PI) / 7;
+  const startAngle = -Math.PI / 2; // Start at top
+
+  // Section 1: About (Top - 0°)
   makeSection(
     k,
-    k.vec2(k.center().x, k.center().y - 400),
+    k.vec2(centerX + radius * Math.cos(startAngle), centerY + radius * Math.sin(startAngle)),
     generalData.section1Name,
     (parent) => {
       const container = parent.add([k.pos(-805, -700), k.opacity(0)]);
@@ -169,15 +189,13 @@ export default async function initGame() {
       makeAppear(k, socialContainer);
     }
   );
+
+  // Section 2: Skills (Top-Right - 51.4°)
   makeSection(
     k,
-    k.vec2(k.center().x - 400, k.center().y),
+    k.vec2(centerX + radius * Math.cos(startAngle + angleStep), centerY + radius * Math.sin(startAngle + angleStep)),
     generalData.section2Name,
     (parent) => {
-      /* make the container independent of the section
-       so that the skill icons appear on top of every section's children.
-       so that when the skill icons are pushed around by the player
-       they always remain on top */
       const container = k.add([
         k.opacity(0),
         k.pos(parent.pos.x - 300, parent.pos.y),
@@ -196,12 +214,59 @@ export default async function initGame() {
       makeAppear(k, container);
     }
   );
+
+  // Section 3: Personal Projects (Right - 102.9°)
   makeSection(
     k,
-    k.vec2(k.center().x + 400, k.center().y),
+    k.vec2(centerX + radius * Math.cos(startAngle + 2 * angleStep), centerY + radius * Math.sin(startAngle + 2 * angleStep)),
     generalData.section3Name,
     (parent) => {
+      const container = parent.add([k.opacity(0), k.pos(0, 0)]);
+
+      for (const project of projectsData) {
+        makeProjectCard(
+          k,
+          container,
+          k.vec2(project.pos.x, project.pos.y),
+          project.data,
+          project.thumbnail
+        );
+      }
+
+      makeAppear(k, container);
+    }
+  );
+
+  // Section 4: Education (Bottom-Right - 154.3°)
+  makeSection(
+    k,
+    k.vec2(centerX + radius * Math.cos(startAngle + 3 * angleStep), centerY + radius * Math.sin(startAngle + 3 * angleStep)),
+    generalData.section4Name,
+    (parent) => {
+      const container = parent.add([k.opacity(0), k.pos(0, 0)]);
+
+      for (const education of educationData) {
+        makeEducationCard(
+          k,
+          container,
+          k.vec2(education.pos.x, education.pos.y),
+          education.cardHeight,
+          education.educationData
+        );
+      }
+
+      makeAppear(k, container);
+    }
+  );
+
+  // Section 5: Working Experience (Bottom - 205.7°)
+  makeSection(
+    k,
+    k.vec2(centerX + radius * Math.cos(startAngle + 4 * angleStep), centerY + radius * Math.sin(startAngle + 4 * angleStep)),
+    generalData.section5Name,
+    (parent) => {
       const container = parent.add([k.opacity(0), k.pos(0)]);
+
       for (const experienceData of experiencesData) {
         makeWorkExperienceCard(
           k,
@@ -215,20 +280,44 @@ export default async function initGame() {
       makeAppear(k, container);
     }
   );
+
+  // Section 6: Research & Teaching (Bottom-Left - 257.1°)
   makeSection(
     k,
-    k.vec2(k.center().x, k.center().y + 400),
-    generalData.section4Name,
+    k.vec2(centerX + radius * Math.cos(startAngle + 5 * angleStep), centerY + radius * Math.sin(startAngle + 5 * angleStep)),
+    generalData.section6Name,
     (parent) => {
       const container = parent.add([k.opacity(0), k.pos(0, 0)]);
 
-      for (const project of projectsData) {
-        makeProjectCard(
+      for (const research of researchData) {
+        makeResearchCard(
           k,
           container,
-          k.vec2(project.pos.x, project.pos.y),
-          project.data,
-          project.thumbnail
+          k.vec2(research.pos.x, research.pos.y),
+          research.cardHeight,
+          research.researchData
+        );
+      }
+
+      makeAppear(k, container);
+    }
+  );
+
+  // Section 7: Awards (Left - 308.6°)
+  makeSection(
+    k,
+    k.vec2(centerX + radius * Math.cos(startAngle + 6 * angleStep), centerY + radius * Math.sin(startAngle + 6 * angleStep)),
+    generalData.section7Name,
+    (parent) => {
+      const container = parent.add([k.opacity(0), k.pos(0, 0)]);
+
+      for (const award of awardsData) {
+        makeAwardCard(
+          k,
+          container,
+          k.vec2(award.pos.x, award.pos.y),
+          award.cardHeight,
+          award.awardData
         );
       }
 
