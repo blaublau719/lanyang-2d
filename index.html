@@ -43,26 +43,16 @@
       (function() {
         'use strict';
 
-        const API_ENDPOINT = 'https://api.counterapi.dev/v2/lan-yangs-team-2779/pp-visitors';
-        const API_KEY = ''; // 如果需要认证，在这里填入你的 API key
+        // 使用 countapi.xyz - 完全免费，无需 API key
+        const NAMESPACE = 'lan-yang-portfolio';
+        const KEY = 'pp-visitors';
+        const API_URL = `https://api.countapi.xyz/hit/${NAMESPACE}/${KEY}`;
 
-        // 调用 CounterAPI 增加计数
+        // 调用 CountAPI 增加计数
         async function incrementCounter() {
           try {
-            const headers = {
-              'Content-Type': 'application/json'
-            };
-
-            // 如果有 API key，添加到请求头
-            if (API_KEY) {
-              headers['Authorization'] = `Bearer ${API_KEY}`;
-            }
-
-            // 调用 /up 端点来增加计数
-            const response = await fetch(`${API_ENDPOINT}/up`, {
-              method: 'GET',
-              headers: headers
-            });
+            // countapi.xyz 的 /hit 端点会自动创建计数器（如果不存在）并 +1
+            const response = await fetch(API_URL);
 
             if (!response.ok) {
               throw new Error(`HTTP error! status: ${response.status}`);
@@ -70,8 +60,8 @@
 
             const data = await response.json();
 
-            // CounterAPI 返回的数据格式: { count: number }
-            const visitCount = data.count || data.value || 0;
+            // countapi.xyz 返回格式: { value: number }
+            const visitCount = data.value || 0;
 
             // 更新显示
             const countElement = document.getElementById('visit-count');
