@@ -43,37 +43,54 @@
       (function() {
         'use strict';
 
-        const STORAGE_KEY = 'page_visit_count';
-        let visitCount = 0;
+        const API_ENDPOINT = 'https://api.counterapi.dev/v2/lan-yangs-team-2779/pp-visitors';
+        const API_KEY = ''; // 如果需要认证，在这里填入你的 API key
 
-        // Try to use localStorage for persistence
-        try {
-          // Check if localStorage is available
-          if (typeof(Storage) !== 'undefined' && localStorage) {
-            // Read current count from localStorage
-            const storedCount = localStorage.getItem(STORAGE_KEY);
-            visitCount = storedCount ? parseInt(storedCount, 10) : 0;
+        // 调用 CounterAPI 增加计数
+        async function incrementCounter() {
+          try {
+            const headers = {
+              'Content-Type': 'application/json'
+            };
 
-            // Increment the count
-            visitCount++;
+            // 如果有 API key，添加到请求头
+            if (API_KEY) {
+              headers['Authorization'] = `Bearer ${API_KEY}`;
+            }
 
-            // Save back to localStorage
-            localStorage.setItem(STORAGE_KEY, visitCount.toString());
-          } else {
-            // localStorage not available, use session-only counter
-            visitCount = 1;
+            // 调用 /up 端点来增加计数
+            const response = await fetch(`${API_ENDPOINT}/up`, {
+              method: 'GET',
+              headers: headers
+            });
+
+            if (!response.ok) {
+              throw new Error(`HTTP error! status: ${response.status}`);
+            }
+
+            const data = await response.json();
+
+            // CounterAPI 返回的数据格式: { count: number }
+            const visitCount = data.count || data.value || 0;
+
+            // 更新显示
+            const countElement = document.getElementById('visit-count');
+            if (countElement) {
+              countElement.textContent = visitCount;
+            }
+          } catch (error) {
+            console.error('Failed to update counter:', error);
+
+            // 如果 API 调用失败，显示错误或默认值
+            const countElement = document.getElementById('visit-count');
+            if (countElement) {
+              countElement.textContent = '---';
+            }
           }
-        } catch (e) {
-          // localStorage might throw errors (privacy mode, quota exceeded, etc.)
-          // Fall back to session-only counter
-          visitCount = 1;
         }
 
-        // Update the display
-        const countElement = document.getElementById('visit-count');
-        if (countElement) {
-          countElement.textContent = visitCount;
-        }
+        // 页面加载时调用
+        incrementCounter();
       })();
     </script>
   </body>
