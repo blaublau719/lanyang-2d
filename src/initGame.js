@@ -14,27 +14,28 @@ import makeAwardCard from "./components/AwardCard";
 import { cameraZoomValueAtom, store } from "./store";
 
 export default async function initGame() {
-  const generalData = await (await fetch("./configs/generalData.json")).json();
-  const skillsData = await (await fetch("./configs/skillsData.json")).json();
-  const socialsData = await (await fetch("./configs/socialsData.json")).json();
+  const base = import.meta.env.BASE_URL;
+  const generalData = await (await fetch(`${base}configs/generalData.json`)).json();
+  const skillsData = await (await fetch(`${base}configs/skillsData.json`)).json();
+  const socialsData = await (await fetch(`${base}configs/socialsData.json`)).json();
   const experiencesData = await (
-    await fetch("./configs/experiencesData.json")
+    await fetch(`${base}configs/experiencesData.json`)
   ).json();
   const projectsData = await (
-    await fetch("./configs/projectsData.json")
+    await fetch(`${base}configs/projectsData.json`)
   ).json();
   const educationData = await (
-    await fetch("./configs/educationData.json")
+    await fetch(`${base}configs/educationData.json`)
   ).json();
   const researchData = await (
-    await fetch("./configs/researchData.json")
+    await fetch(`${base}configs/researchData.json`)
   ).json();
   const awardsData = await (
-    await fetch("./configs/awardsData.json")
+    await fetch(`${base}configs/awardsData.json`)
   ).json();
 
   const k = makeKaplayCtx();
-  k.loadSprite("player", "./sprites/player.png", {
+  k.loadSprite("player", `${base}sprites/player.png`, {
     sliceX: 4,
     sliceY: 8,
     anims: {
@@ -56,40 +57,43 @@ export default async function initGame() {
       "walk-right-down-idle": 28,
     },
   });
-  k.loadFont("ibm-regular", "./fonts/IBMPlexSans-Regular.ttf");
-  k.loadFont("ibm-bold", "./fonts/IBMPlexSans-Bold.ttf");
-  k.loadSprite("github-logo", "./logos/github-logo.png");
-  k.loadSprite("linkedin-logo", "./logos/linkedin-logo.png");
-  k.loadSprite("youtube-logo", "./logos/youtube-logo.png");
-  k.loadSprite("x-logo", "./logos/x-logo.png");
-  k.loadSprite("substack-logo", "./logos/substack-logo.png");
-  k.loadSprite("python-logo", "./logos/python-logo.png");
-  k.loadSprite("java-logo", "./logos/java-logo.png");
-  k.loadSprite("c-logo", "./logos/c-logo.png");
-  k.loadSprite("csharp-logo", "./logos/csharp-logo.png");
-  k.loadSprite("langgraph-logo", "./logos/langgraph-logo.png");
-  k.loadSprite("openai-logo", "./logos/openai-logo.png");
-  k.loadSprite("crewai-logo", "./logos/crewai-logo.png");
-  k.loadSprite("tavily-logo", "./logos/tavily-logo.png");
-  k.loadSprite("azureaifoundry-logo", "./logos/azureaifoundry-logo.png");
-  k.loadSprite("pydanticai-logo", "./logos/pydanticai-logo.png");
-  k.loadSprite("huggingface-logo", "./logos/huggingface-logo.png");
-  k.loadSprite("lmstudio-logo", "./logos/lmstudio-logo.png");
-  k.loadSprite("git-logo", "./logos/git-logo.png");
-  k.loadSprite("docker-logo", "./logos/docker-logo.png");
-  k.loadSprite("neo4j-logo", "./logos/neo4j-logo.png");
-  k.loadSprite("unity-logo", "./logos/unity-logo.png");
-  k.loadSprite("fastapi-logo", "./logos/fastapi-logo.png");
-  k.loadSprite("streamlit-logo", "./logos/streamlit-logo.png");
-  k.loadSprite("react-logo", "./logos/react-logo.png");
-  k.loadSprite("azure-logo", "./logos/azure-logo.png");
-  k.loadSprite("email-logo", "./logos/email-logo.png");
-  k.loadSprite("cat-logo", "./logos/cat-logo.png");
-  k.loadSprite("haw-logo", "./logos/haw-logo.png");
-  k.loadSprite("sonic-js", "./projects/sonic-js.png");
-  k.loadSprite("kirby-ts", "./projects/kirby-ts.png");
-  k.loadSprite("platformer-js", "./projects/platformer-js.png");
-  k.loadShaderURL("tiledPattern", null, "./shaders/tiledPattern.frag");
+  k.loadFont("ibm-regular", `${base}fonts/IBMPlexSans-Regular.ttf`);
+  k.loadFont("ibm-bold", `${base}fonts/IBMPlexSans-Bold.ttf`);
+  k.loadSprite("github-logo", `${base}logos/github-logo.png`);
+  k.loadSprite("linkedin-logo", `${base}logos/linkedin-logo.png`);
+  k.loadSprite("youtube-logo", `${base}logos/youtube-logo.png`);
+  k.loadSprite("x-logo", `${base}logos/x-logo.png`);
+  k.loadSprite("substack-logo", `${base}logos/substack-logo.png`);
+  k.loadSprite("python-logo", `${base}logos/python-logo.png`);
+  k.loadSprite("java-logo", `${base}logos/java-logo.png`);
+  k.loadSprite("c-logo", `${base}logos/c-logo.png`);
+  k.loadSprite("csharp-logo", `${base}logos/csharp-logo.png`);
+  k.loadSprite("langgraph-logo", `${base}logos/langgraph-logo.png`);
+  k.loadSprite("openai-logo", `${base}logos/openai-logo.png`);
+  k.loadSprite("crewai-logo", `${base}logos/crewai-logo.png`);
+  k.loadSprite("tavily-logo", `${base}logos/tavily-logo.png`);
+  k.loadSprite("azureaifoundry-logo", `${base}logos/azureaifoundry-logo.png`);
+  k.loadSprite("pydanticai-logo", `${base}logos/pydanticai-logo.png`);
+  k.loadSprite("huggingface-logo", `${base}logos/huggingface-logo.png`);
+  k.loadSprite("lmstudio-logo", `${base}logos/lmstudio-logo.png`);
+  k.loadSprite("git-logo", `${base}logos/git-logo.png`);
+  k.loadSprite("docker-logo", `${base}logos/docker-logo.png`);
+  k.loadSprite("neo4j-logo", `${base}logos/neo4j-logo.png`);
+  k.loadSprite("unity-logo", `${base}logos/unity-logo.png`);
+  k.loadSprite("fastapi-logo", `${base}logos/fastapi-logo.png`);
+  k.loadSprite("streamlit-logo", `${base}logos/streamlit-logo.png`);
+  k.loadSprite("react-logo", `${base}logos/react-logo.png`);
+  k.loadSprite("azure-logo", `${base}logos/azure-logo.png`);
+  k.loadSprite("email-logo", `${base}logos/email-logo.png`);
+  k.loadSprite("cat-logo", `${base}logos/cat-logo.png`);
+  k.loadSprite("haw-logo", `${base}logos/haw-logo.png`);
+  // Dynamically load project thumbnails from projectsData
+  for (const project of projectsData) {
+    if (project.thumbnail) {
+      k.loadSprite(project.thumbnail, `${base}projects/${project.thumbnail}.png`);
+    }
+  }
+  k.loadShaderURL("tiledPattern", null, `${base}shaders/tiledPattern.frag`);
 
   const setInitCamZoomValue = () => {
     if (k.width() < 1000) {
@@ -224,8 +228,19 @@ export default async function initGame() {
     k.vec2(centerX + radius * Math.cos(startAngle + 2 * angleStep), centerY + radius * Math.sin(startAngle + 2 * angleStep)),
     generalData.section3Name,
     (parent) => {
-      // Projects section - empty for now
-      const container = parent.add([k.opacity(0), k.pos(400, -300)]);
+      // 2x2 grid: positions are defined in projectsData.json
+      const container = parent.add([k.opacity(0), k.pos(1400, 0)]);
+
+      for (const projectData of projectsData) {
+        makeProjectCard(
+          k,
+          container,
+          k.vec2(projectData.pos.x, projectData.pos.y),
+          projectData.data,
+          projectData.thumbnail
+        );
+      }
+
       makeAppear(k, container);
     }
   );

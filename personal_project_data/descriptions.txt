@@ -1,0 +1,11 @@
+ARPO:
+Novice powerlifters risk injury from poor squat form due to limited self-viewing and instant feedback during heavy lifts. ARPO addresses this via an AR mirror using Azure Kinect for body tracking and Unity 3D to render real-time 3D skeletons with rule-based checks on depth, grips, balance, spine, and heels. Dynamic text prompts and updating correctness scores guide corrections per rep, enabling safer training and measurable form improvement.
+
+HCC:
+Writing tailored German cover letters (Anschreiben) for every job application is tedious and time-consuming. This web app, built with CrewAI and FastAPI, orchestrates six specialized AI agents that scrape job postings, analyze uploaded resumes (PDF/DOCX), research companies, and generate fact-checked, ready-to-send cover letters, all from a single form submission.
+
+zhreader:
+**Graph Book Reader** is a React + D3.js web app designed to help readers navigate the 50+ characters in the Chinese palace novel *Legend of Zhen Huan*. It pairs an EPUB reader with an interactive character graph that evolves as you read — titles, relationships, and alliances update chapter by chapter based on predefined story events, turning a notoriously complex story into a visual, explorable experience.
+
+Ebay
+Manually listing products on eBay is time-consuming and error-prone, especially at scale. This Python CLI tool reads product data from an Excel spreadsheet and bulk-creates eBay Germany listings via the Trading API, handling image upload and compression with Pillow, smart shipping rules, Best Offer pricing, and duplicate prevention in a single pipeline. Each run writes item IDs back to the spreadsheet and logs results to JSON, so sellers always know exactly what was listed and can revise listings later.
