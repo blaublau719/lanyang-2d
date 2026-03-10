@@ -90,7 +90,7 @@
     }
   },
   {
-    "pos": { "x": -75, "y": 200 },
+    "pos": { "x": -150, "y": 200 },
     "name": "LangGraph",
     "logoData": {
       "name": "langgraph-logo",
@@ -99,7 +99,7 @@
     }
   },
   {
-    "pos": { "x": 75, "y": 200 },
+    "pos": { "x": 0, "y": 200 },
     "name": "OpenAI",
     "logoData": {
       "name": "openai-logo",
@@ -108,7 +108,7 @@
     }
   },
   {
-    "pos": { "x": 225, "y": 200 },
+    "pos": { "x": 150, "y": 200 },
     "name": "CrewAI",
     "logoData": {
       "name": "crewai-logo",
@@ -117,7 +117,7 @@
     }
   },
   {
-    "pos": { "x": 375, "y": 200 },
+    "pos": { "x": 300, "y": 200 },
     "name": "Tavily",
     "logoData": {
       "name": "tavily-logo",
@@ -126,8 +126,26 @@
     }
   },
   {
+    "pos": { "x": 450, "y": 200 },
+    "name": "Hugging Face",
+    "logoData": {
+      "name": "huggingface-logo",
+      "width": 128,
+      "height": 128
+    }
+  },
+  {
+    "pos": { "x": -150, "y": 350 },
+    "name": "React",
+    "logoData": {
+      "name": "react-logo",
+      "width": 128,
+      "height": 128
+    }
+  },
+  {
     "pos": { "x": 0, "y": 350 },
-    "name": "Azure AI Foundry",
+    "name": "Azure AI",
     "logoData": {
       "name": "azureaifoundry-logo",
       "width": 128,
@@ -136,18 +154,18 @@
   },
   {
     "pos": { "x": 150, "y": 350 },
-    "name": "Pydantic AI",
+    "name": "Azure",
     "logoData": {
-      "name": "pydanticai-logo",
+      "name": "azure-logo",
       "width": 128,
       "height": 128
     }
   },
   {
     "pos": { "x": 300, "y": 350 },
-    "name": "Hugging Face",
+    "name": "Pydantic AI",
     "logoData": {
-      "name": "huggingface-logo",
+      "name": "pydanticai-logo",
       "width": 128,
       "height": 128
     }

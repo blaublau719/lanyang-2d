@@ -81,6 +81,8 @@ export default async function initGame() {
   k.loadSprite("unity-logo", "./logos/unity-logo.png");
   k.loadSprite("fastapi-logo", "./logos/fastapi-logo.png");
   k.loadSprite("streamlit-logo", "./logos/streamlit-logo.png");
+  k.loadSprite("react-logo", "./logos/react-logo.png");
+  k.loadSprite("azure-logo", "./logos/azure-logo.png");
   k.loadSprite("email-logo", "./logos/email-logo.png");
   k.loadSprite("cat-logo", "./logos/cat-logo.png");
   k.loadSprite("haw-logo", "./logos/haw-logo.png");
