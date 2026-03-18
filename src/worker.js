@@ -4,9 +4,9 @@ export default {
 
     if (url.pathname === "/api/visitors") {
       const current =
-        (await env.VISITOR_COUNT.get("total_visits")) || "0";
+        (await env.VISITOR_COUNT.get("visit")) || "0";
       const count = (parseInt(current) + 1).toString();
-      await env.VISITOR_COUNT.put("total_visits", count);
+      await env.VISITOR_COUNT.put("visit", count);
       return Response.json(
         { count },
         {
