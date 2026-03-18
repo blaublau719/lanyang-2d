@@ -224,7 +224,7 @@ Current structure:
 - `title`: Project name and description
 - `thumbnail`: Image filename (without extension)
 - `links`: Array of links (Live Demo, Source Code, Documentation, etc.)
-- `pos`: Position coordinates in the game world
+- `pos`: Position coordinates in the game world.
 
 **Add project images:**
 
