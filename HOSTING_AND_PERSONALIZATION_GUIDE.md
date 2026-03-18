@@ -407,7 +407,6 @@ This portfolio uses:
 3. **Testing**: Always test locally before deploying. Use `npm run dev` for quick iterations.
 
 4. **Git Workflow**:
-
    - Make changes locally
    - Test thoroughly
    - Commit and push to trigger automatic deployment
