@@ -1,9 +1,9 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
-// DEPLOY_TARGET=cloudflare → base "/" (Workers)
-// default → base "/lanyang-2d/" (GitHub Pages)
+// GitHub Actions sets GITHUB_ACTIONS=true automatically
+// GitHub Pages → base "/lanyang-2d/", Cloudflare Workers → base "/"
 export default defineConfig({
-  base: process.env.DEPLOY_TARGET === "cloudflare" ? "/" : "/lanyang-2d/",
+  base: process.env.GITHUB_ACTIONS ? "/lanyang-2d/" : "/",
   plugins: [react()],
 });
