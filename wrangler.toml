@@ -1,7 +1,11 @@
 name = "portfolio"
+main = "src/worker.ts"
 compatibility_date = "2026-03-18"
 compatibility_flags = ["nodejs_compat"]
 
 [assets]
 directory = "dist"
-index = "index.html"  # 明确index
+
+[[kv_namespaces]]
+binding = "VISITOR_COUNT"
+id = "32c867a846a64cf1b2c468a1dc694553"
