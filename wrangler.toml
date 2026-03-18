@@ -2,8 +2,4 @@ name = "portfolio"
 compatibility_date = "2026-03-18"
 compatibility_flags = ["nodejs_compat"]
 
-[assets]
-directory = "dist"
-
-[assets.not_found_handling]
-single_page_application = true
+assets = { directory = "dist" }
